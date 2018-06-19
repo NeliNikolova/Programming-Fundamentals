@@ -10,10 +10,20 @@ namespace greeting
 	{
 		static void Main(string[] args)
 		{
-			int a = int.Parse(Console.ReadLine());
-			int b = int.Parse(Console.ReadLine());
-			int sum = a + b;
-			Console.WriteLine($"{a} + {b} = {sum}");
+			string name = Console.ReadLine();
+
+			int age = int.Parse(Console.ReadLine());
+			int employee = int.Parse(Console.ReadLine());
+			double salary = double.Parse(Console.ReadLine());
+
+
+
+
+			Console.WriteLine("Name: {0}", name);
+			Console.WriteLine(" Age: {0}", age);
+			Console.WriteLine("Employee ID: {0:D8}", employee);
+			Console.WriteLine("Salary: {0:f2}", salary);
+
 		}
 	}
 }
